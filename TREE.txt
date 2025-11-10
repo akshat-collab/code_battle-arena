@@ -1,0 +1,98 @@
+CodeBattle Arena - Directory Tree
+==================================
+
+codebattle-platform/
+│
+├── README.md                    # Main project documentation
+├── QUICKSTART.md                # Quick start guide
+├── PROJECT_SUMMARY.md           # Project overview
+├── FEATURES.md                  # Feature list
+├── SETUP.md                     # Setup instructions
+├── LICENSE                      # MIT License
+├── .gitignore                   # Git ignore rules
+│
+├── frontend/                    # Next.js 15 Frontend
+│   ├── app/
+│   │   ├── layout.tsx          # Root layout
+│   │   ├── page.tsx            # Landing page
+│   │   ├── globals.css         # Global styles
+│   │   ├── providers.tsx       # Context providers
+│   │   ├── (arena)/            # Arena routes
+│   │   │   ├── layout.tsx
+│   │   │   └── challenges/
+│   │   │       └── page.tsx
+│   │   ├── learn/
+│   │   │   └── page.tsx        # Learning paths
+│   │   ├── automate/
+│   │   │   └── page.tsx        # Automation builder
+│   │   └── community/
+│   │       └── page.tsx        # Community forums
+│   ├── components/
+│   │   ├── arena/              # Arena components
+│   │   ├── code-editor/
+│   │   │   └── CodeEditor.tsx  # Monaco editor
+│   │   ├── automation-builder/
+│   │   │   ├── AutomationBuilder.tsx
+│   │   │   ├── NodePanel.tsx
+│   │   │   └── NodeConfigModal.tsx
+│   │   ├── community/
+│   │   └── learning/
+│   ├── lib/
+│   │   ├── api.ts              # API client
+│   │   └── utils.ts            # Utilities
+│   ├── package.json
+│   ├── tsconfig.json
+│   ├── next.config.js
+│   ├── tailwind.config.js
+│   ├── postcss.config.js
+│   └── .gitignore
+│
+├── backend/                     # Express Backend
+│   ├── src/
+│   │   ├── server.ts           # Entry point
+│   │   ├── api/
+│   │   │   ├── routes.ts       # Route setup
+│   │   │   └── routes/
+│   │   │       ├── auth.ts     # Authentication
+│   │   │       ├── challenges.ts
+│   │   │       ├── users.ts
+│   │   │       └── competitions.ts
+│   │   ├── database/
+│   │   │   ├── postgres.ts     # PostgreSQL
+│   │   │   └── redis.ts        # Redis
+│   │   ├── services/
+│   │   │   ├── real-time/
+│   │   │   │   └── socket.ts   # Socket.IO
+│   │   │   └── code-execution/
+│   │   │       └── runner.ts   # Code runner
+│   │   └── utils/
+│   │       └── logger.ts       # Winston logger
+│   ├── services/
+│   │   └── code-execution-app/ # FastAPI Service
+│   │       ├── main.py         # FastAPI app
+│   │       ├── requirements.txt
+│   │       └── Dockerfile
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── .gitignore
+│
+├── automation-engine/           # Workflow Engine
+│   ├── nodes/                  # Node types
+│   ├── workflows/              # Workflow definitions
+│   ├── triggers/               # Event triggers
+│   └── README.md
+│
+└── infrastructure/              # Infrastructure
+    ├── docker/
+    │   ├── docker-compose.yml  # Service orchestration
+    │   ├── Dockerfile.backend
+    │   └── Dockerfile.frontend
+    ├── database/
+    │   └── schema.sql          # PostgreSQL schema
+    ├── kubernetes/             # K8s configs
+    └── monitoring/             # Monitoring configs
+
+Total Files: ~60+
+Lines of Code: ~1,900+
+Technologies: 20+
+Services: 8+
